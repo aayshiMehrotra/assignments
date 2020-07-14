@@ -1,0 +1,21 @@
+<div class="students">
+    <h3>Assignment 5</h3>
+    <table class="table">
+        <thead >
+            <tr>
+            <th (click)="sortData(item.key)" *ngFor="let item of studentHeading| keyvalue" scope="col" >{{item.key | uppercase}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of studentsData  | filter:sortValue:sortType:studentsOriginalData">
+            <th>{{student.class}}</th>
+            <td>{{student.name}}</td>
+            <td>{{student.section}}</td>
+            <td>{{student.sub1}}</td>
+            <td>{{student.sub2}}</td>
+            <td>{{student.sub3}}</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,17 @@
+<div class="timer-status">
+        <h3>Assignment 3</h3>
+    <div class="timer-status__inner">
+        <div class="timer-status__value">
+                <app-timer [timerValue]="timerInfo.timerValue"></app-timer>
+        </div>
+        <div class="timer-status__setup">
+            <app-timer-setup (setTimer)="onSettingTimer($event)"></app-timer-setup>
+        </div>
+        <div class="timer-status__info">
+            <app-timer-log [timerInfo]="timerInfo"></app-timer-log>
+        </div>
+        <div class="timer-status__analysis">
+            <app-timer-analysis [timerInfo]="timerInfo"></app-timer-analysis>
+        </div>
+    </div>
+</div> 

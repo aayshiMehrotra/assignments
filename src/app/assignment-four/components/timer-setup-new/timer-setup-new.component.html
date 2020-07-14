@@ -1,0 +1,18 @@
+<div class="timer-setup">
+    <form (ngSubmit)="onSubmit()" #form="ngForm">
+        <div class="form-group">
+            <label for="limit">Enter timer limit</label>
+            <input type="text" class="form-control" id="limit" name="timerlimit" ngModel required #timerlimit="ngModel" />
+            
+        </div>
+    
+        <button type="submit" class="btn btn-primary mr-3"><span *ngIf="!pressedStart">Start</span>
+            <span *ngIf="pressedStart">Pause</span>
+        </button>
+        <button type="button" class="btn btn-primary" (click)="resetTimer()">Reset</button>
+        <ul class="list-group" >
+                <li *ngFor="let item of timerInfo.clicksTimerValues" class="list-group-item">{{item}}</li>
+                
+        </ul>
+    </form>
+</div>

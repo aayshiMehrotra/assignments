@@ -1,0 +1,51 @@
+.assignmenttwo {
+    width: 800px;
+    margin: 0 auto;
+    &__tabs{
+        display: inline-block;
+         width: 100%;
+         .nav-item {
+             cursor: pointer;
+         }
+    }
+
+    h3{
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+.product {
+    flex-wrap: wrap;
+    &__grid {
+        .product__item {
+            width: 25%;
+        }
+    }
+
+    &__list {
+        .product__item {
+            width: 50%;
+        }
+    }
+
+    &__item {
+        height: 100px;
+    }
+
+    &__name {
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #000;
+    }
+    &__price {
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #000;
+        border-top: none; 
+    }
+}

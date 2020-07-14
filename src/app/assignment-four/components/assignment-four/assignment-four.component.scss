@@ -1,0 +1,23 @@
+.timer-status {
+    width: 800px;
+    margin: 0 auto; 
+   
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid #000;
+    }
+    
+
+    &__value , &__info {
+        width: 40%;
+    }
+
+    &__setup , &__analysis {
+        width: 60%;
+    }
+    h3 {
+        text-align: center;
+        margin:20px 0;
+    }
+}

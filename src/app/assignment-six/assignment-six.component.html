@@ -1,0 +1,8 @@
+<div class="load-more">
+    <h3>Assignment 6</h3>
+    <div class="load-more__inner" styleWidth="styleWidth" styleHeight="styleHeight"  limit="limit"  appLoadMore [loadMore]="onLoadMore.bind(this)">
+        <div *ngFor="let items of divsLoaded; let i = index" class="load-more__items load-more__items{{i+1}}">
+            <button class="btn btn-primary "(click)="alertNumber(i+1)" >Click Me {{i+1}}</button>
+        </div>
+    </div>
+</div>
